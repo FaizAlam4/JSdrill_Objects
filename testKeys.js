@@ -1,8 +1,4 @@
-import { each } from "./each.js";
-const items = [1, 2, 3, 4, 5, 5];
+import { keys } from "./keys.js";
+const testObject = { name: "Bruce Wayne", age: 36, location: "Gotham" };
 
-function cb(ele, index) {
-  return `${ele} at index- ${index}`;
-}
-
-each(items, cb);
+console.log(keys(testObject));
